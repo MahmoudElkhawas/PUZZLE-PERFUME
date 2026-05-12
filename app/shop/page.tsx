@@ -150,8 +150,6 @@ export default function ShopPage() {
   return (
     <main className="min-h-screen bg-background overflow-hidden">
       <Navigation />
-
-      {/* Hero Section */}
       <section className="pt-24 md:pt-32 pb-10 md:pb-14 px-4 md:px-8 bg-muted/30">
         <div className="max-width-container">
           <div className="space-y-4 animate-in fade-in slide-in-from-bottom-8 duration-700">
@@ -175,7 +173,6 @@ export default function ShopPage() {
         </div>
       </section>
 
-      {/* Categories */}
       <section className="py-14 md:py-20 px-4 md:px-8">
         <div className="max-width-container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
@@ -202,10 +199,8 @@ export default function ShopPage() {
                     className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
 
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500" />
 
-                  {/* Content */}
                   <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     <h3 className="text-2xl font-light text-white uppercase tracking-[0.2em]">
                       {category.name}
@@ -216,7 +211,6 @@ export default function ShopPage() {
                     </p>
                   </div>
 
-                  {/* Active Badge */}
                   <div className="absolute top-4 left-4">
                     <div
                       className={`px-4 py-2 rounded-full text-xs font-medium backdrop-blur-md border transition-all duration-300 ${
@@ -235,10 +229,8 @@ export default function ShopPage() {
         </div>
       </section>
 
-      {/* Products Section */}
       <section className="py-10 md:py-20 px-4 md:px-8">
         <div className="max-width-container">
-          {/* Mobile Top Bar */}
           <div className="md:hidden flex items-center justify-between mb-6">
             <p className="text-sm text-muted-foreground">
               {filteredProducts.length} Results
@@ -254,14 +246,12 @@ export default function ShopPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Sidebar */}
             <aside
               className={`${
                 showFilters ? 'block' : 'hidden'
               } md:block animate-in fade-in slide-in-from-left-5 duration-500`}
             >
               <div className="sticky top-24 space-y-8 bg-white border border-border rounded-2xl p-6 shadow-sm">
-                {/* Mobile Header */}
                 <div className="md:hidden flex items-center justify-between">
                   <h2 className="text-lg font-medium text-primary">
                     Filters
@@ -275,7 +265,6 @@ export default function ShopPage() {
                   </button>
                 </div>
 
-                {/* Category */}
                 <div>
                   <h3 className="text-lg font-medium text-primary mb-4">
                     Category
@@ -306,7 +295,6 @@ export default function ShopPage() {
                   </div>
                 </div>
 
-                {/* Price */}
                 <div>
                   <h3 className="text-lg font-medium text-primary mb-4">
                     Price Range
@@ -351,7 +339,6 @@ export default function ShopPage() {
                   </div>
                 </div>
 
-                {/* Apply */}
                 <button
                   onClick={() => setShowFilters(false)}
                   className="md:hidden w-full py-3 rounded-xl bg-accent text-white uppercase tracking-wider hover:bg-accent/90 transition-all duration-300 hover:scale-[1.02]"
@@ -361,9 +348,7 @@ export default function ShopPage() {
               </div>
             </aside>
 
-            {/* Products */}
             <div className="md:col-span-3">
-              {/* Top Bar */}
               <div className="hidden md:flex items-center justify-between mb-8">
                 <p className="text-sm text-muted-foreground">
                   Showing {filteredProducts.length} Products
@@ -397,7 +382,6 @@ export default function ShopPage() {
                 </div>
               </div>
 
-              {/* Grid */}
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
                 {filteredProducts.map((product, index) => (
                   <div
@@ -407,7 +391,6 @@ export default function ShopPage() {
                       animationDelay: `${index * 80}ms`,
                     }}
                   >
-                    {/* Image */}
                     <div className="relative overflow-hidden rounded-2xl mb-4 bg-muted">
                       <Image
                         src={product.image}
@@ -417,10 +400,8 @@ export default function ShopPage() {
                         className="w-full h-44 md:h-96 object-cover group-hover:scale-105 transition-transform duration-700"
                       />
 
-                      {/* Overlay */}
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500" />
 
-                      {/* Wishlist */}
                       <button
                         onClick={() =>
                           toggleFavorite(product.id)
@@ -438,7 +419,6 @@ export default function ShopPage() {
                       </button>
                     </div>
 
-                    {/* Info */}
                     <div className="space-y-2">
                       <p className="text-xs uppercase tracking-[0.25em] text-accent font-medium">
                         {product.category}
@@ -453,7 +433,6 @@ export default function ShopPage() {
                       </p>
                     </div>
 
-                    {/* Button */}
                     <button className="w-full mt-4 py-3 rounded-xl border border-primary text-primary uppercase tracking-wider text-xs font-medium hover:bg-primary hover:text-white hover:scale-[1.02] transition-all duration-300">
                       Add to Cart
                     </button>
@@ -465,7 +444,6 @@ export default function ShopPage() {
         </div>
       </section>
 
-      {/* Features */}
       <section className="py-14 md:py-20 px-4 md:px-8 bg-muted/20">
         <div className="max-width-container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
