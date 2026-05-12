@@ -28,7 +28,6 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section */}
       <section className="pt-20 md:pt-0 min-h-screen flex items-center justify-center relative overflow-hidden group">
         <div className="absolute inset-0">
           <Image
@@ -43,7 +42,6 @@ export default function Home() {
 
         <div className="relative z-10 max-width-container px-4 md:px-8 py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* Content */}
             <div className="space-y-8 animate-fade-in-up">
               <div className="flex items-center gap-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 <div className="h-px w-12 bg-accent mt-10" />
@@ -65,17 +63,14 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Hero Image - visible on larger screens */}
             <div className="hidden md:block relative h-96 animate-fade-in" style={{ animationDelay: '0.4s' }} />
           </div>
         </div>
       </section>
 
-      {/* Collections Section */}
       <section className="py-24 bg-background">
         <div className="max-width-container px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* New Arrivals */}
             <Link href="/shop/new-arrivals" className="group">
               <div className="relative overflow-hidden h-96 mb-6 rounded-xl">
                 <Image
@@ -96,7 +91,6 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Best Sellers */}
             <Link href="/shop/best-sellers" className="group">
               <div className="relative overflow-hidden h-96 mb-6 rounded-xl">
                 <Image
@@ -117,7 +111,6 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Luxury Collection */}
             <Link href="/shop/luxury-collection" className="group">
               <div className="relative overflow-hidden h-96 mb-6 rounded-xl">
                 <Image
@@ -141,7 +134,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Most Seller Section */}
       <section className="py-16 md:py-24 px-4 md:px-8 bg-background">
         <div className="max-width-container">
           <div className="mb-12 animate-fade-in-up">
@@ -182,7 +174,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* New Collection Section */}
       <section className="py-16 md:py-24 px-4 md:px-8 bg-muted/20">
         <div className="max-width-container">
           <div className="mb-12 animate-fade-in-up">
@@ -223,7 +214,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bottom Hero Image */}
       <section className="relative lg:h-150 h-80 md:h-96 flex items-center justify-center overflow-hidden">
         <Image
           src="/hero-perfume.jpg"
@@ -249,7 +239,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
       <section className="py-24 md:py-32 px-4 md:px-8 bg-muted/20">
         <div className="max-width-container">
           <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-4 text-center">
@@ -260,7 +249,6 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/* Premium Quality */}
             <div className="text-center space-y-6 group p-8 rounded-xl bg-white transition-all duration-500 hover:shadow-lg hover:-translate-y-2">
               <div className="w-16 h-16 mx-auto bg-gradient-to-br from-accent/20 to-accent/10 rounded-xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
                 <Award size={32} className="text-accent transition-transform duration-500 group-hover:rotate-6" />
@@ -271,7 +259,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Fast Delivery */}
             <div className="text-center space-y-6 group p-8 rounded-xl bg-white transition-all duration-500 hover:shadow-lg hover:-translate-y-2">
               <div className="w-16 h-16 mx-auto bg-gradient-to-br from-accent/20 to-accent/10 rounded-xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
                 <Truck size={32} className="text-accent transition-transform duration-500 group-hover:rotate-6" />
@@ -282,7 +269,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Easy Returns */}
             <div className="text-center space-y-6 group p-8 rounded-xl bg-white transition-all duration-500 hover:shadow-lg hover:-translate-y-2">
               <div className="w-16 h-16 mx-auto bg-gradient-to-br from-accent/20 to-accent/10 rounded-xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
                 <RotateCcw size={32} className="text-accent transition-transform duration-500 group-hover:rotate-6" />
