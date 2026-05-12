@@ -42,12 +42,9 @@ export default function ContactPage() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    // simple validation
     if (!formData.name || !formData.email || !formData.message) return;
 
     setLoading(true);
-
-    // fake API delay
     setTimeout(() => {
       setLoading(false);
       setSuccess(true);
@@ -61,7 +58,6 @@ export default function ContactPage() {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero */}
       <motion.section
         className="pt-28 pb-16 px-6 bg-muted/30"
         initial="hidden"
@@ -82,7 +78,6 @@ export default function ContactPage() {
         </div>
       </motion.section>
 
-      {/* Cards */}
       <section className="py-16 px-6">
         <motion.div
           className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6"
@@ -112,11 +107,9 @@ export default function ContactPage() {
         </motion.div>
       </section>
 
-      {/* Form */}
       <section className="py-16 px-6 bg-muted/20">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
-          {/* Form */}
           <motion.form
             onSubmit={handleSubmit}
             className="space-y-5"
@@ -182,7 +175,6 @@ export default function ContactPage() {
             )}
           </motion.form>
 
-          {/* Info */}
           <motion.div
             className="space-y-6"
             initial="hidden"
