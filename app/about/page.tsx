@@ -28,7 +28,6 @@ export default function AboutPage() {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Header */}
       <motion.section
         className="pt-32 pb-12 px-4 md:px-8"
         initial="hidden"
@@ -52,7 +51,6 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
-      {/* Our Story */}
       <motion.section
         className="py-24 px-4 md:px-8"
         initial="hidden"
@@ -91,7 +89,6 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
-      {/* Values */}
       <motion.section
         className="py-24 px-4 md:px-8 bg-muted/20"
         initial="hidden"
