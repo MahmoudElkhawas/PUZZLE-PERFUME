@@ -54,7 +54,6 @@ export function HorizontalCarousel({ children }: CarouselProps) {
         {children}
       </div>
 
-      {/* Left Arrow - Responsive positioning and sizing */}
       {mounted && showArrows && (
         <button
           onClick={() => scroll('left')}
@@ -68,7 +67,6 @@ export function HorizontalCarousel({ children }: CarouselProps) {
         </button>
       )}
 
-      {/* Right Arrow - Responsive positioning and sizing */}
       {mounted && showArrows && (
         <button
           onClick={() => scroll('right')}
